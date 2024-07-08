@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB3283DB-7D59-41FA-BE44-4BCA9B68EC52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Circular</RootNamespace>
+    <AssemblyName>Circular</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ErrorReportUrl>https://github.com/ochensati/CircularEditor2</ErrorReportUrl>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>0.0.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>812038FAFB98606E4650CB4BD76D5EF1A4C70366</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Circular_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>File.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Circular_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aCircleObject.cs" />
+    <Compile Include="Decorations\aDecoration.cs" />
+    <Compile Include="Decorations\DecorationDot.cs" />
+    <Compile Include="Decorations\DecorationEnums.cs" />
+    <Compile Include="Decorations\iAnchorHolder.cs" />
+    <Compile Include="Decorations\Shapes\OneLine.cs" />
+    <Compile Include="Decorations\Shapes\OneDot.cs" />
+    <Compile Include="Decorations\Shapes\Rings.cs" />
+    <Compile Include="Decorations\Shapes\ThreeDots.cs" />
+    <Compile Include="Decorations\Shapes\ThreeLines.cs" />
+    <Compile Include="Decorations\Shapes\TwoDots.cs" />
+    <Compile Include="Decorations\Shapes\TwoLines.cs" />
+    <Compile Include="engWord.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geometry.cs" />
+    <Compile Include="iMouseable.cs" />
+    <Compile Include="LetterShapes\shapes\Blank.cs" />
+    <Compile Include="LetterShapes\shapes\Connector.cs" />
+    <Compile Include="LetterShapes\shapes\SmallFullMoon.cs" />
+    <Compile Include="LetterShapes\shapes\SmallHarp.cs" />
+    <Compile Include="LetterShapes\shapes\SmallHorizon.cs" />
+    <Compile Include="LetterShapes\shapes\SmallMoonRise.cs" />
+    <Compile Include="LetterShapes\shapes\SmallSaturn.cs" />
+    <Compile Include="LetterShapes\shapes\SmallSliverMoon.cs" />
+    <Compile Include="LetterShapes\shapes\SmallSunRise.cs" />
+    <Compile Include="LetterShapes\shapes\SmallVowelOnly.cs" />
+    <Compile Include="LetterShapes\shapes\SmallArc.cs" />
+    <Compile Include="LetterShapes\shapes\Spiral.cs" />
+    <Compile Include="LetterShapes\shapes\SunRise.cs" />
+    <Compile Include="LetterShapes\shapes\Horizon.cs" />
+    <Compile Include="MultiSelect.cs" />
+    <Compile Include="Paragraph\Paragraph.cs" />
+    <Compile Include="PredefinedArrangement.cs" />
+    <Compile Include="Sentence\PointD.cs" />
+    <Compile Include="Sentence\Sentence.cs" />
+    <Compile Include="Sentence\Shaker.cs" />
+    <Compile Include="GraphicsExtensions.cs" />
+    <Compile Include="Vowels\Shapes\LorenO.cs" />
+    <Compile Include="Vowels\Shapes\LorenI.cs" />
+    <Compile Include="Vowels\Shapes\LorenU.cs" />
+    <Compile Include="Vowels\Shapes\LorenE.cs" />
+    <Compile Include="Vowels\Shapes\LorenA.cs" />
+    <Compile Include="Words\WordDictionary.cs" />
+    <Compile Include="Words\DecorationLine.cs" />
+    <Compile Include="Words\LocationProbabilities.cs" />
+    <Compile Include="Words\WordCircle.cs" />
+    <Compile Include="engLetter.cs" />
+    <Compile Include="LetterShapes\shapes\Arc.cs" />
+    <Compile Include="LetterShapes\shapes\FullMoon.cs" />
+    <Compile Include="LetterShapes\shapes\Harp.cs" />
+    <Compile Include="LetterShapes\aSyllable.cs" />
+    <Compile Include="LetterShapes\shapes\MoonRise.cs" />
+    <Compile Include="LetterShapes\shapes\Saturn.cs" />
+    <Compile Include="LetterShapes\shapes\SliverMoon.cs" />
+    <Compile Include="LetterShapes\shapes\VowelOnly.cs" />
+    <Compile Include="MathHelps.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VectorGraphics.cs" />
+    <Compile Include="Vowels\Shapes\CenterDot.cs" />
+    <Compile Include="Vowels\Shapes\CrossLine.cs" />
+    <Compile Include="Vowels\Shapes\Half.cs" />
+    <Compile Include="Vowels\Shapes\TopDot.cs" />
+    <Compile Include="Vowels\Shapes\TwoDot.cs" />
+    <Compile Include="Vowels\aVowel.cs" />
+    <Compile Include="Vowels\VowelEnums.cs" />
+    <Compile Include="Decorations\DecorationAnchor.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Circular_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="File.ico" />
+    <Content Include="Readme.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PathFind\EpPathFinding.cs.csproj">
+      <Project>{82FE700A-0BA3-49D0-ACE0-C1F87FBE5021}</Project>
+      <Name>EpPathFinding.cs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyGridEx.CS\PropertyGridEx\PropertyGridEx.csproj">
+      <Project>{B0BB47F2-21C4-41FC-B6E6-40757ADFC4A1}</Project>
+      <Name>PropertyGridEx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Licence.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
