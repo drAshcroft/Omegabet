@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Circular.Sentence;
+using System;
 using System.Drawing;
-using Circular.Sentence;
 
 namespace Circular
 {

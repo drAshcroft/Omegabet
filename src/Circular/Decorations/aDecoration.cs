@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using Circular.LetterShapes;
-
+﻿using Circular.Decorations.Shapes;
 using Circular.Words;
-using Circular.Decorations.Shapes;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 
 namespace Circular.Decorations
 {
